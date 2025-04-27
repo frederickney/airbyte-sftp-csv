@@ -1,0 +1,30 @@
+data:
+  ab_internal:
+    ql: 100
+    sl: 100
+  connectorBuildOptions:
+    baseImage: docker.io/airbyte/python-connector-base:4.0.0@sha256:d9894b6895923b379f3006fa251147806919c62b7d9021b5cd125bb67d7bbe22
+  connectorSubtype: file
+  connectorTestSuitesOptions:
+    - suite: unitTests
+    - suite: integrationTests
+  connectorType: destination
+  definitionId: 0954f956-72c5-4b7f-bba3-a5c891ec9b14
+  dockerImageTag: 0.2.8
+  dockerRepository: airbyte/destination-sftp-csv
+  documentationUrl: https://docs.airbyte.com/integrations/destinations/sftp-csv
+  githubIssueLabel: destination-sftp-csv
+  icon: icon.svg
+  license: MIT
+  name: SFTP-CSV
+  registryOverrides:
+    cloud:
+      enabled: true
+    oss:
+      enabled: true
+  releaseStage: alpha
+  supportLevel: community
+  tags:
+    - language:python
+    - cdk:python
+metadataSpecVersion: "1.0"
