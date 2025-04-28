@@ -1,3 +1,15 @@
+# Disclaimer
+
+I'm not the original author of this airbyte connector. I modified it based on the one provided by airbyte.
+
+# Featuring
+
+ * No empty line at the end of the file
+ * Write only on the remote sftp server
+ * Use pandas in order to collect stream's records
+ * Also use pandas for exporting records within csv file format
+ * Flush all stream into associated csv file at the end off the process
+
 # Sftp-Csv source connector
 
 This is the repository for the SFTP-CSV destination connector, written in Python.
